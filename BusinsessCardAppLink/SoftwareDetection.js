@@ -8,17 +8,18 @@ function getMobileOperatingSystem() {
     }
 
     if (/android/i.test(userAgent)) {
-        return window.location.href = 'https://apps.apple.com/gb/app/drawing-pad/id655019822';
+        return window.location.href = '';
     }
 
     // iOS detection from: http://stackoverflow.com/a/9039885/177710
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
         return "iOS";
-    }
+     return window.location.href = '';
 
-    return window.location.href = 'https://apps.apple.com/gb/app/drawing-pad/id655019822';
-
+	}
 }
+
+   
 
 getMobileOperatingSystem();
 
