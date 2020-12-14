@@ -8,7 +8,7 @@ function getMobileOperatingSystem() {
     }
 
     if (/android/i.test(userAgent)) {
-        return window.location.href = '';
+        return window.location.href = 'https://play.google.com/store/apps/details?id=com.YCU.YABusinessCard';
     }
 
     // iOS detection from: http://stackoverflow.com/a/9039885/177710
